@@ -1,0 +1,11 @@
+﻿{
+  "ConnectionStrings": {
+    "KW_ACU_ConnectionStrings": "server=(localdb)\\ProjectsV13;Database=KW_ACU_DB;Integrated Security=True;MultipleActiveResultSets=true;"
+  },
+  "GoogleReCaptcha": {
+    //"key": "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI",
+    //"secret": "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"
+    "key": "6Ldt0F8UAAAAADVA1xFdeiokONgVCfj1V-I3vxM-",
+    "secret": "6Ldt0F8UAAAAAKwCooksVDLqTIxG3RAXEah3QRkA"
+  }
+}

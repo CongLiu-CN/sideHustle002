@@ -1,0 +1,102 @@
+﻿<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyC6KJpl_rldEg8yLZU3zuusEqHW124X648"></script>
+<script src="~/js/jquery-google-reviews.js"></script>
+<script>
+        jQuery(document).ready(function ($) {
+            if ($("#google-reviews").length == 0) {
+                return
+            }
+            // Find a placeID via https://developers.google.com/places/place-id
+            $("#google-reviews").googlePlaces({
+                placeId: 'ChIJ_alc_yX3K4gRz-oGZVLbN6I',
+
+                //footer: '', // html/text under Reviews block
+                max_rows: 10, // max rows of reviews to be displayed
+                min_rating: 4, // minimum rating of reviews to be displayed
+                months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+                text_break_length: "90", // length before a review box is set to max width
+                shorten_names: true, // example: "Max Mustermann" -> "Max M.""
+            });
+        });
+</script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" scroll-directive="" id="mainNav" ng-class="{'navbar-shrink':boolChangeClass}">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="/images/KW_ACU_BLUE_LOGO.png" alt="logo" style="width:40px;">KW Acupuncture</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1" ui-sref-active="active">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" ui-sref="main">Home</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1" ui-sref-active="active">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" ui-sref="reviews">Reviews</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="text-center" style="margin-top:4rem;">
+    <h2 class="section-title mb-2 h1">Success Stories</h2>
+</section>
+<div class="container">
+    <div class="row">
+        
+        <!--<div class="col-sm-4">
+            <h3>Google Reviews</h3>
+            <div id="google-reviews"></div>
+        </div>-->
+        <div class="col-sm-8">
+            <h3>Patient Testimonials</h3>
+            <div>
+                <p>
+                    <div><strong>Janina Struewing, General Manager GoodLife Fitness Clubs</strong></div>
+
+                    I cannot believe how quickly I got results with Dr. Wang. I have suffered from chronic sleep disorder for over 20 years, visited 2 sleep clinics, paid a lot of money towards the several kinds of therapies. But only 10 visits with Dr.Wang I now sleep like a baby. Wow, how fantastic is that. I sleep 6-8 hours nightly and feel like a new woman. She also helps me a lot with my neck shoulders pain. She is a miracle worker. I strongly recommend her to everyone.
+
+                </p>
+            </div>
+            <div>
+                <p>
+                    <div><strong>Andy J.(Elora)</strong></div>
+                    Hi Dr. Wang,
+                    I don't understand how you did it, but I have no more back pain - the treatment you did was immediate. I was unable to touch my toes for 6 weeks before I came to your clinic and I've been pain free since (before you I tried another acupuncture place plus a massage therapist. Nothing worked).
+                    I have since recommended you to several work colleagues and my friend (a professor at the university of Waterloo).
+                    I would also like my wife to see you for her arthritis (in her hands). She's an artist which makes it difficult for her. But we live in Elora which makes it difficult to get to your clinic
+                    It's not good for repeat business, but you will get many recommendations!
+                </p>
+            </div>
+            <div>
+                <p>
+                    <div><strong>Joey L.(UW)</strong></div>
+
+                    I suffered from serious pain in pelvis and I was diagnosed as inflammation in hospital. I took antibiotic pills for weeks but it does not help much. Then I decide to try traditional Chinese treatment and I find Dr. Wang on the Internet. To my surprise, it works so well that right after the first treatment the pain is alleviated a lot. Then I received another three treatment from Dr. Wang which makes the pa. I can't believe her treatment is so obvious and helpful. I highly recommend her to everyone.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <div><strong>Jennifer P (Kitchener)</strong></div>
+
+                    Dr. Wong has changed my life. She has treated me for acute digestive issues, symptomatic of IBS, and continues to treat me as we progress into the stabilization and maintenance phase of acupuncture for this issue under her care. Dr. Wong is professional, she listens, and she cares deeply about helping her patients. She is a pleasure to work with and a true expert at her craft. I would recommend her to anyone who has any concerns with their health or is just looking to improve and balance their energy through Traditional Chinese Medicine. After 8 years of suffering, and more progressive symptoms in the last 6 months, Dr. Wong has completely turned my body around. I sleep like a baby at night after my acupuncture treatments, I no longer struggle with severe constipation, the bloating in my abdomen is reduced significantly, and I have more energy and vitality than ever before. If I have a headache or migraine when going to see Dr. Wong, all I have to do is let her know and she makes it go away by the end of the treatment.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <div><strong>Richard S. MASc Candidate - Civil Engineering (University of Waterloo)</strong></div>
+
+                    I was diagnosed with irritable bowl syndrome (IBS) and told by a gastroenterologist that there was nothing that could be done. I had been toughing it out for years but it got to the point where the pain and discomfort in my gut was getting unbearable. Through a friend I heard about traditional Chinese medicine (TCM) and found a practitioner. Initially I was skeptical, my first TCM specialist wasn't helpful. Dr. Wang was the second TCM doctor I tried and I started getting results after two treatments. Any pain I had from my IBS is now gone and my digestive system is functioning much better than it has in years.
+                    After trying all possible mainstream treatments for my condition it was Dr. Wang who got results and allowed my body to work as it should. She also helped my allergies, cope with my stress levels, and corrected a problem with my lungs that was holding me back in soccer and basketball, but that's for another testimonial.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h3>Youtube Reviews</h3>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/P-Xil5xFV7s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fsiwFCylRyY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/g7GDv14mTqQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+</div>

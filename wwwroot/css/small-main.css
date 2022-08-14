@@ -1,0 +1,147 @@
+﻿body {
+    padding-top: 54px;
+}
+.main-alert {
+    /*max-width: 300px !important;*/
+    font-size: 18px;
+    margin: auto;
+}
+section .section-title {
+    text-align: center;
+    color: #78C2AD;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.alert-hidden {
+    visibility: hidden;
+}
+.hiddenView {
+    opacity: 0.2;
+    transition: opacity 1s ease;
+}
+
+.visibleView {
+    opacity: 1;
+}
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+#mainNav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  #mainNav .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+  }
+  #mainNav .navbar-nav {
+    margin-top: 0;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+/* Map */
+.map {
+    height: 30rem;
+}
+
+@media (max-width: 992px) {
+    .map {
+        height: 75%;
+    }
+}
+
+.map iframe {
+    pointer-events: none;
+}
+
+footer.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer.footer .social-link {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #78c2ad;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer.footer .social-link:hover {
+    background-color: #78c2ad;
+    text-decoration: none;
+}
+
+a {
+color: #78C2AD;
+}
+
+a:hover, a:focus, a:active {
+    color: #155d74;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #78C2AD;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 28px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0;
+  }
+}

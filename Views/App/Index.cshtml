@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kitchener Waterloo Acupuncture and Chinese Medicine</title>
+    <meta name="location" content="Kitchener, Waterloo, Ontario, Canada">
+    <meta name="coverage" content="worldwide">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="revised" content="Kitchener Waterloo Acupuncture, Chinese Medicine Kitchener Waterloo (KW), 11/09/2012">
+    <meta name="geo.placename" content="Kitchener &amp; Waterloo, Ontario">
+    <meta name="geo.region" content="CA-ON">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="~/images/1200px-Yin_yang.svg.png">
+    @*<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />*@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+    <link href="~/css/minty.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/lib/animate.css/animate.min.css" rel="stylesheet" />
+
+    <link href="~/css/small-main.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118748256-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118748256-1');
+    </script>
+
+    <base href="/">
+</head>
+<body id="page-top">
+    <div ng-app="AngularJS_Proj">
+        <div ui-view></div>
+        <div ng-include="'views/modules/footer.html'"></div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery.easing/js/jquery.easing.min.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-animate/angular-animate.min.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <script src="~/js/frontend/app.js"></script>
+    <script src="~/js/frontend/app.config.js"></script>
+
+    <script src="~/js/frontend/controllers/MainCtrl.js"></script>
+
+    <script src="~/js/frontend/services/alert.js"></script>
+    <script src="~/js/frontend/directives/scrollView.js"></script>
+    <script src="~/js/frontend/directives/loadingSpinner.js"></script>
+
+    <script src="~/js/navbarInView.js"></script>
+</body>
+</html>
